@@ -6,5 +6,10 @@ wheels/
 *.egg-info
 .env
 
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+site/  # mkdocs build output
+
 # Virtual environments
 .venv
