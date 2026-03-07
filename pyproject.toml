@@ -19,7 +19,6 @@ classifiers = [
 ]
 dependencies = [
 	"boto3>=1.42",
-	"sagemaker>=3.5",
 	"typer>=0.24",
 	"pydantic>=2.12",
 	"rich>=13.9",
@@ -97,10 +96,6 @@ strict = true
 warn_unreachable = true
 pretty = true
 show_error_context = true
-
-[[tool.mypy.overrides]]
-module = ["sagemaker.*"]
-ignore_missing_imports = true   # sagemaker has incomplete stubs
 
 
 # testing
